@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(https://fondosmil.com/fondo/21961.jpg);
+    background-image: url(https://i.pinimg.com/236x/e1/dd/1d/e1dd1dd6ca32500020dd9ab0bd1d451c.jpg);
     backdrop-filter: blur(2px);
     color: white;
     background-size: cover;
@@ -16,8 +16,7 @@ body {
 }
 
 .grid-container {
-    background-color: rgb(34, 31, 31);
-    opacity: .6;
+    font: 150% sans-serif;
     margin: 10px;
     padding: 10px;
     display: grid;
@@ -35,22 +34,24 @@ body {
 }
 
 .grid-header {
-    background-color: rgb(20, 20, 20); 
     position: relative;
-    display: block; 
-    text-shadow: 1px 1px 1px white;
-    text-decoration-line: none;
     display: flex;
+    background: linear-gradient(90deg,#5079ff,#00deff);
+    padding: 10px;
 }
 
 .grid-main {
     margin: 10px;
+    padding: 10px;
 }
 
+.grid-aside {
+    padding: 10px;
+    margin: 20px;
+}
 .grid-footer {
     grid-area: footer;
     display: inline-block;
-    background-color: black;
     background: linear-gradient(to bottom, grey transparent);
 }
 
@@ -61,32 +62,44 @@ ul li {
     text-align: right;
 }
 
+a {
+font-size: 20px;
+}
+
 ol li {
-    background: #222;
     display:inline-block;
     padding-left:10px;
     padding-right:10px;
     margin-left: 10px;
     margin-right: 10px;
-    background: linear-gradient(to bottom, transparent, #222);
+    background: linear-gradient(to bottom, transparent, #222)
+}
+
+ol li:hover {
+    cursor: pointer;
+
 }
 
 .redes li a {
-   box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
-   font-size: 20px;
-   line-height: 50px;
-   color: rgb(36, 13, 13);
-   display: inline-block;
-   height: 100%;
-   width: 100%;
-   text-align: center;
-   background: rgb(122, 113, 113); opacity: .8;
-   margin: 0 5px;
-   transition: .2s;
-   border-radius: 50%;
-   padding: 10px;
-   padding-left: 10px;
+        box-shadow: 0 3px 5px 0px rgb(8 58 66 / 20%);
+        font-size: 19px;
+        line-height: 25px;
+        display: inline-block;
+        color: #0a0a0a;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        background: rgb(0 0 0 / 11%);
+        opacity: 1.7;
+        margin: 0px;
+        transition: 0.2s;
+        border-radius: 50%;
+        padding: 10px;
+        position: relative;
+        left: 246px;
 }
+
+
 
 .redes < footer{
     display: none;
@@ -100,12 +113,12 @@ ol li {
 }
 
 .flex-container {
+    font: ;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     opacity: .8;
-    background:rgb(32, 29, 29);
     padding: 50px;
     margin: 10px;
     margin-top: 100px;
@@ -114,18 +127,19 @@ ol li {
 
 .form__input {
     width: 400px;
-    margin: 20px 0;
+    margin: 21px 10px;
     padding: 20px;
     border: none;
-    border-bottom: 3px solid rgb(129, 50, 19);
+    border-bottom: 3px solid rgb(167, 156, 194);
     background: transparent;
     color: #fff;
+    
 }
 
 .form__input:focus {
-    background: linear-gradient(to bottom, transparent, #222);
+    background: linear-gradient(to bottom, transparent, rgb(53, 48, 82));
     outline: none;
-    border-bottom: 3px solid rgb(104, 8, 8);
+    border-bottom: 3px solid rgb(79, 68, 117);
 }
 
 .form__textarea {
@@ -140,22 +154,29 @@ textarea {
 
 img {
     background-attachment: scroll;
-    padding: 40px;
-    height: 200px;
-background: #222; opacity: .8;
-    
+    padding: 0px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
 }
+
+img:hover {
+   transform: scale(2);
+   transition: 1s;
+   cursor: pointer;
+}
+
 .listas {
-    background-color: black;
+    background: linear-gradient(90deg,#5079ff,#00deff);
 }
 
 .texto-inicio {
     text-align: center;
     background-attachment: fixed;
-    background-color: rgb(32, 32, 32);
     opacity: .8;
     color: #fff;
 }
+
 .form__section {
     color: #fff;
 }
